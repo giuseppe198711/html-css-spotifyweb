@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  height: 100vh;
+  background-color: #000;
+}
+
+main {
+  height: calc(100% - 80px);
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background-color: grey;
+  height: calc(100% - 80px);
+}
+
+.logo {
+  background-color: red;
+}
+
+.main-nav {
+  background-color: blue;
+}
+
+.secondary-nav {
+  background-color: pink;
+
+}
+
+.main-content {
+  height: 100%;
+  overflow: auto;
+  width: calc(100% - 200px);
+  background-color: yellow;
+  margin-left: 200px;
+}
+
+.uograde {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 80px;
+  width: calc(100% - 200px);
+  background-color: rgba(0, 0, 0, 0.5);
+  S
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  background-color: green;
+}
