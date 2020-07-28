@@ -4,19 +4,42 @@
   padding: 0;
 }
 
+.tc {
+  text-align: center;
+}
+
 .flex {
   display: flex;
 }
 
 .btn {
   color: #fff;
-  background-color: purple;
+  background-color: black;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 50px;
+
 }
 
 .page-wrapper {
   height: 100vh;
   background-color: #000;
 }
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h6 {
+  margin-bottom: 15px;
+}
+
+h4, h6{
+  text-align: center;
+  font-size: 12px;
+}
+
 main {
   height: calc(100% - 80px);
   display: flex;
@@ -46,15 +69,25 @@ aside {
 }
 
 .playlist-list {
-  height: 80%;
+  height: 90%;
   overflow-y: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .aside-bottom {
 height: 80px;
-flex-shrink:  0;
+flex-shrink: 0;
 margin-top: auto;
 background-color: pink;
+}
+
+@media screen and (max-height: 430px) {
+  .aside-bottom{
+    display: none;
+  }
 
 }
 
@@ -63,37 +96,71 @@ background-color: pink;
   padding: 20px;
   overflow-y: auto;
   width: calc(100% - 200px);
-  background-color: yellow;
+  background-color: #141922;
+  color: white;
 }
 
 .list-menu {
   list-style: none;
   justify-content: center;
+  margin-top: 70px;
+
 }
 
-.list-menu li {
+.sott:hover::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 40px;
+  background-color: green;
+  margin: auto;
+
+}
+
+.list-menu li a {
   padding: 10px;
-  font-size: 9PX
+  font-size: 9PX;
+  color: white;
 }
 
 .music {
-  justify-content: space-around;
   margin-top: 20px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
   }
 
 .box-music, .box-music-personal, .circle-music-popolar {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  width: calc((100% / 6) - 20px);
+
+  margin-left: 20px;
 }
 
-.box-text-music, .box-text-music-personal, .box-text-music-popolar {
-  width: 100px;
-  height: 50px;
-  background-color: grey;
+
+@media screen and (max-width: 992px) {
+  .box-music, .box-music-personal, .circle-music-popolar {
+    width: calc((100% / 4) - 20px);
+
+  }
+
 }
- .box-music-personal, .box-text-music-personal, .circle-music-popolar, .box-text-music-popolar {
-  margin: 10px;
+
+@media screen and (max-width: 768px) {
+  .box-music, .box-music-personal, .circle-music-popolar {
+    width: calc((100% / 2) - 20px);
+
+  }
+
+}
+
+
+
+ .box-music-personal {
+  margin-left: 20px;
+}
+
+.dim-img {
+  width: 100%;
+
 }
 
 .upgrade {
@@ -108,6 +175,7 @@ background-color: pink;
   width: calc(100% - 200px);
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
+
 }
 
 footer {
