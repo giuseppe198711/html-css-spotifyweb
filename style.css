@@ -7,6 +7,9 @@
 .tc {
   text-align: center;
 }
+.ib {
+  display: inline-block;
+}
 
 .flex {
   display: flex;
@@ -24,6 +27,8 @@
 .page-wrapper {
   height: 100vh;
   background-color: #000;
+  color: white;
+
 }
 
 h3 {
@@ -31,7 +36,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-h6 {
+h6, p{
   margin-bottom: 15px;
 }
 
@@ -50,31 +55,57 @@ aside {
   flex-direction: column;
   height: 100%;
   width: 200px;
-  background-color: grey;
+  background-color: #000000;
 }
 
 .logo {
-  background-color: blue;
+  width: 150px;
+  margin: auto;
+  padding: 10px;
+}
+
+.home, .search, .libreria {
+  width: 35px;
+  padding-left: 10px;
+
+
 }
 
 .main-nav {
   background-color: orange;
+
+}
+
+.main-nav-list {
+  list-style: none;
 }
 
 .secondary-nav {
   height: 100%;
   overflow: hidden;
   background-color: lightblue;
-
+  padding-left: 10px;
 }
+
+.fa-plus {
+  border: 20px;
+  background-color: lightgrey;
+}
+
 
 .playlist-list {
   height: 90%;
   overflow-y: auto;
+  padding-top: 15px;
+}
+
+.playlist-list li {
+  padding-bottom: 10px;
 }
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .aside-bottom {
@@ -85,10 +116,9 @@ background-color: pink;
 }
 
 @media screen and (max-height: 430px) {
-  .aside-bottom{
+  .aside-bottom {
     display: none;
   }
-
 }
 
 .main-content {
@@ -131,7 +161,6 @@ background-color: pink;
 
 .box-music, .box-music-personal, .circle-music-popolar {
   width: calc((100% / 6) - 20px);
-
   margin-left: 20px;
 }
 
@@ -139,20 +168,31 @@ background-color: pink;
 @media screen and (max-width: 992px) {
   .box-music, .box-music-personal, .circle-music-popolar {
     width: calc((100% / 4) - 20px);
-
   }
-
 }
 
 @media screen and (max-width: 768px) {
   .box-music, .box-music-personal, .circle-music-popolar {
     width: calc((100% / 2) - 20px);
-
   }
 
+.scompare {
+  display: none;
 }
 
+.lateral-bar {
+  width: 80px;
+}
 
+.main-content {
+  width: calc(100% - 80px);
+}
+
+.upgrade {
+  width: 100%;
+}
+
+}
 
  .box-music-personal {
   margin-left: 20px;
@@ -161,6 +201,11 @@ background-color: pink;
 .dim-img {
   width: 100%;
 
+}
+
+
+.circle {
+  border-radius: 50%;
 }
 
 .upgrade {
@@ -183,4 +228,35 @@ footer {
   z-index: 1;
   height: 80px;
   background-color: green;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.dim-img-footer {
+  width: 50px;
+}
+
+.footer-central-top {
+  height: 30px
+
+}
+
+.footer-central-bottom {
+  height: 30px;
+
+}
+
+.music-bar {
+  height: 5px;
+  width: 400px;
+
+
+}
+
+.box-music-sound {
+  height: 30px;
+
+
+
 }
