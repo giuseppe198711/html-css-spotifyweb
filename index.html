@@ -7,6 +7,7 @@
     <title>SpotifyWeb</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -15,26 +16,33 @@
     <div class="page-wrapper">
       <main>
         <aside class="lateral-bar">
-          <div class="logo"><img src="img/logo.svg"alt=""></div>
+
+          <div class="spotify">
+            <i class="fab fa-spotify logo"></i>
+            <h2>Spotify</h2>
+          </div>
+
           <nav class="main-nav">
+
             <ul class="main-nav-list">
+
               <li class="home">
                 <a href="#">
-                  <img class="ib" src="img/home.svg"alt="">
+                  <img class="centro" src="img/home.svg"alt="">
                   <span class="scompare">Home</span>
                 </a>
               </li>
 
               <li class="search">
                 <a href="#">
-                <img src="img/search.svg"alt="">
+                <img class="centro" src="img/search.svg"alt="">
                 <span class="scompare">Cerca</span>
                 </a>
               </li>
 
               <li class="libreria">
                 <a href="#">
-                  <img src="img/libreria.svg"alt="">
+                  <img class="centro"src="img/libreria.svg"alt="">
                   <span class="scompare">La tua libreria</span>
                 </a>
                 <li>
@@ -43,7 +51,7 @@
 
           <!-- secondari-nav -->
 
-          <nav class="secondary-nav">
+          <nav class="secondary-nav scompare">
             <h3>PLAYLIST</h3>
             <a><i class="fas fa-plus"></i>Crea Playlist</a>
             <ul class="playlist-list">
@@ -58,10 +66,14 @@
           </nav>
           <!-- /secondary-nav -->
           <!-- aside-bottom -->
+
           <div class="aside-bottom">
-            <a href="#">Installa app</a>
-            <hr>
-            <h3><i class="far fa-user-circle"></i>Giuseppe De Felice</h3>
+            <i class="fas fa-arrow-circle-down"></i>
+            <span class="installa" href="#">Installa app</span>
+            <div class="separatore "></div>
+            <i class="far fa-user-circle"></i>
+            <span class="utente">Giuseppe</span>
+
           </div>
           <!-- /aside-bottom -->
 
@@ -87,88 +99,163 @@
           <!-- music -->
           <h3>Recently played</h3>
           <div class="music flex">
-            <div class="box-music">
 
-              <img class="dim-img"src="img/metal_lifting.jpg" alt="">
+            <div class="box-music">
+              <div class="box-layover">
+                <div class="layover">
+                  <i class="far fa-play-circle play-box"></i>
+                </div>
+                <img class="dim-img"src="img/metal_lifting.jpg" alt="">
+              </div>
               <h4>Heavy Metal</h4>
               <h6>Subtitle</h6>
             </div>
 
 
-
-            <div class="box-music"><img class="dim-img" src="img/stranger.jpeg" alt="">
-              <h4>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
-              <h6>Kyle Dixon & Michael Stein</h6>
+           <div class="box-music">
+            <div class="box-layover">
+              <div class="layover">
+                <i class="far fa-play-circle play-box"></i>
+              </div>
+              <img class="dim-img" src="img/stranger.jpeg" alt="">
             </div>
+            <h4>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
+            <h6>Kyle Dixon & Michael Stein</h6>
+          </div>
 
-            <div class="box-music"><img class="dim-img" src="img/aquietplace.jpeg" alt="">
+            <div class="box-music">
+              <div class="box-layover">
+                <div class="layover">
+                  <i class="far fa-play-circle play-box"></i>
+                </div>
+                <img class="dim-img" src="img/aquietplace.jpeg" alt="">
+              </div>
               <h4>A quiet place</h4>
               <h6>Subtitle</h6>
             </div>
 
-            <div class="box-music"><img class="dim-img" src="img/split.jpeg" alt="">
+            <div class="box-music">
+              <div class="box-layover">
+                <div class="layover">
+                  <i class="far fa-play-circle play-box"></i>
+                </div>
+                <img class="dim-img" src="img/split.jpeg" alt="">
+              </div>
               <h4>Split</h4>
               <h6>Subtitle</h6>
             </div>
 
-            <div class="box-music"><img class="dim-img" src="img/cure.jpeg" alt="">
+            <div class="box-music">
+              <div class="box-layover">
+                <div class="layover">
+                  <i class="far fa-play-circle play-box"></i>
+                </div>
+                <img class="dim-img" src="img/cure.jpeg" alt="">
+              </div>
               <h4>A cure for wellness</h4>
               <h6>Subtitle</h6>
             </div>
 
-            <div class="box-music"><img class="dim-img" src="img/sinister.jpeg" alt="">
+            <div class="box-music">
+              <div class="box-layover">
+                <div class="layover">
+                  <i class="far fa-play-circle play-box"></i>
+                </div>
+                <img class="dim-img" src="img/sinister.jpeg" alt="">
+              </div>
               <h4>Sinister</h4>
               <h6>Subtitle</h6>
             </div>
           </div>
           <!-- /music -->
           <!-- music-personal -->
-          <h3>Creato per Giuseppe De Felice</h3>
+          <h3>Creato per Giuseppe</h3>
           <p>Piu ascolti, più accurati saranno i suggerimenti.</p>
           <div class="music-personal flex">
-            <div class="box-music-personal"><img class="dim-img" src="img/radar.jpeg" alt=""></div>
 
-            <div class="box-music-personal"><img class="dim-img"src="img/mixdaily.jpeg" alt=""></div>
-          </div>
+            <div class="box-music-personal">
+              <div class="box-layover">
+                <div class="layover">
+                  <i class="far fa-play-circle play-box"></i>
+                </div>
+                <img class="dim-img" src="img/radar.jpeg" alt="">
+              </div>
+              <h4>Release Radar</h4>
+              </div>
+
+
+
+            <div class="box-music-personal">
+              <div class="box-layover">
+                <div class="layover">
+                  <i class="far fa-play-circle play-box"></i>
+                </div>
+                <img class="dim-img"src="img/mixdaily.jpeg" alt="">
+              </div>
+              <h4>Daily Mix 1</h4>
+              </div>
+            </div>
           <!-- /music-personal -->
           <!-- popolar-music -->
           <h3>Artisti più popolari</h3>
           <p>Piu ascolti, più accurati saranno i suggerimenti.</p>
           <div class="music-personal flex">
-            <div class="circle-music-popolar"><img class="dim-img circle" src="img/youg.jpeg" alt=""></div>
+            <div class="circle-music-popolar">
+              <div class="layover-circle">
+                <i class="far fa-play-circle play-box"></i>
+              </div>
+              <img class="dim-img circle" src="img/youg.jpeg" alt="">
+              </div>
 
-            <div class="circle-music-popolar"><img class="dim-img circle" src="img/einaudi.jpeg" alt=""></div>
+            <div class="circle-music-popolar">
+              <div class="layover-circle">
+                <i class="far fa-play-circle play-box"></i>
+              </div>
+              <img class="dim-img circle" src="img/einaudi.jpeg" alt="">
+            </div>
           </div>
           <!-- /popolar-music -->
         </section>
       </main>
       <footer class="flex">
-        <div class="box-music-small ">
+        <div class="box-music-small flex">
           <img class="dim-img-footer" src="img/sinister.jpeg" alt="">
+          <span class="distant">Sinister<br>Brano Nome </span>
 
-          <i class="far fa-heart"></i>
-          <i class="far fa-folder"></i>
+          <i class="far fa-heart dist"></i>
+          <i class="far fa-folder dist"></i>
         </div>
 
-        <div class="">
-          <div class="footer-central-top">
+        <div class="footer-central flex">
+          <div class="footer-central-top flex">
             <i class="fas fa-random"></i>
-            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle play-music"></i>
             <i class="fas fa-step-forward"></i>
             <i class="fas fa-redo-alt"></i>
           </div>
 
           <div class="footer-central-bottom">
-            <p>0:25</p>
-            <div class="music-bar"></div>
-            <p>4,35</p>
+            <span>0:25</span>
+            <div class="music-bar">
+              <div class="music-bar-listen">
+                <div class="music-ball"></div>
+              </div>
+            </div>
+            <span>4:35</span>
           </div>
        </div>
 
-          <div class="box-music-sound">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-desktop"></i>
-            <i class="fas fa-volume-up"></i>
+          <div class="box-music-sound flex">
+            <i class="fas fa-bars dist"></i>
+            <i class="fas fa-desktop dist"></i>
+            <i class="fas fa-volume-up dist"></i>
+
+            <div class="music-bar-mini">
+              <div class="music-bar-listen-mini">
+                <div class="music-ball-mini"></div>
+              </div>
+            </div>
           </div>
 
 
